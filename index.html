@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibrahim Khaled | AI Engineer & Data Scientist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* --- CSS Styles --- */
+        :root {
+            --primary: #3b82f6; /* Electric Blue */
+            --secondary: #10b981; /* Data Green */
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        
+        /* Navigation */
+        nav {
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo { font-weight: 700; font-size: 1.5rem; color: var(--primary); }
+        .social-links a { margin-left: 15px; font-size: 1.2rem; color: var(--text-muted); }
+        .social-links a:hover { color: var(--primary); }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 80vh;
+            padding: 50px 0;
+        }
+        .hero-text { flex: 1; padding-right: 50px; }
+        .hero-text h2 { color: var(--secondary); font-size: 1.2rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; }
+        .hero-text h1 { font-size: 3.5rem; line-height: 1.2; margin-bottom: 20px; }
+        .hero-text h1 span { color: var(--primary); }
+        .hero-text p { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 30px; max-width: 500px; }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--primary);
+            color: white;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+        .btn:hover { background: #2563eb; transform: translateY(-2px); }
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            margin-left: 15px;
+        }
+        .btn-outline:hover { background: var(--primary); color: white; }
+
+        .hero-img { flex: 1; display: flex; justify-content: center; }
+        .hero-img img {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid var(--bg-card);
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+        }
+
+        /* Section Styling */
+        section { padding: 80px 0; }
+        .section-title { font-size: 2rem; margin-bottom: 40px; border-left: 5px solid var(--secondary); padding-left: 15px; }
+
+        /* About & Skills Grid */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+        .skill-category h3 { margin-bottom: 15px; color: var(--primary); }
+        .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 30px; }
+        .tag {
+            background: var(--bg-card);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid #334155;
+        }
+
+        /* Projects */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .project-card {
+            background: var(--bg-card);
+            padding: 30px;
+            border-radius: 10px;
+            border-top: 3px solid var(--primary);
+            transition: 0.3s;
+        }
+        .project-card:hover { transform: translateY(-10px); }
+        .project-card h3 { margin-bottom: 10px; }
+        .project-card p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px; }
+        .tech-stack { font-size: 0.85rem; color: var(--secondary); font-weight: 600; }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid #334155;
+            color: var(--text-muted);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero { flex-direction: column-reverse; text-align: center; justify-content: center; }
+            .hero-text { padding-right: 0; margin-top: 30px; }
+            .hero-img img { width: 250px; height: 250px; }
+            .about-grid { grid-template-columns: 1fr; }
+            .hero-text h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="logo">Ibrahim.AI</div>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/ibrahimkhaled911" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/IbrahimKhaled911" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:ibrahimkhaled911@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </nav>
+
+        <header class="hero">
+            <div class="hero-text">
+                <h2>AI / Machine Learning Engineer</h2>
+                <h1>Hi, I'm <span>Ibrahim Khaled</span></h1>
+                <p>
+                    A Data Scientist & M.Sc. Researcher bridging the gap between advanced Deep Learning theories and Agile product delivery.
+                </p>
+                <a href="cv.pdf" class="btn" download>Download CV <i class="fas fa-download"></i></a>
+                <a href="#projects" class="btn btn-outline">View Work</a>
+            </div>
+            <div class="hero-img">
+                <img src="profile.jpg" alt="Ibrahim Khaled">
+            </div>
+        </header>
+
+        <section id="about">
+            <h2 class="section-title">Why Work With Me?</h2>
+            <div class="about-grid">
+                <div>
+                    <p style="margin-bottom: 20px; color: var(--text-muted);">
+                        I am an AI Engineer and M.Sc. [cite_start]Researcher at Cairo University[cite: 18]. [cite_start]Unlike many in the field, I bring a unique dual-perspective: technical depth in Deep Learning & Computer Vision, combined with process expertise as a Scrum Master[cite: 22].
+                    </p>
+                    <p style="color: var(--text-muted);">
+                        I don't just build models; I ensure they solve real business problems and are delivered efficiently within cross-functional teams.
+                    </p>
+                </div>
+                <div>
+                    <div class="skill-category">
+                        <h3>🤖 AI & Deep Learning</h3>
+                        <div class="tags">
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">YOLO</span>
+                            <span class="tag">CNNs & RNNs</span>
+                            <span class="tag">LLMs</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>📊 Data & Tools</h3>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Agile/Scrum</span>
+                            <span class="tag">Power BI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3><i class="fas fa-search-location"></i> Landmark Recognition</h3>
+                    [cite_start]<p>Implemented image retrieval and landmark recognition using search algorithms and computer vision methods (Google Kaggle Competition)[cite: 41].</p>
+                    <div class="tech-stack">Computer Vision • Algorithms • Image Retrieval</div>
+                </div>
+
+                <div class="project-card">
+                    <h3><i class="fas fa-chart-line"></i> Crypto Forecasting</h3>
+                    [cite_start]<p>Developed CatBoost regression models to predict price movements of the top 14 cryptocurrencies using live trading data[cite: 43].</p>
+                    <div class="tech-stack">Time Series • CatBoost • Regression</div>
+                </div>
+
+                <div class="project-card">
+                    <h3><i class="fas fa-brain"></i> Deep Learning Architectures</h3>
+                    [cite_start]<p>Built CNN architectures for image classification and implemented YOLO-based object detection models for recognition tasks[cite: 46, 47].</p>
+                    <div class="tech-stack">CNNs • YOLO • Object Detection</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" style="padding-bottom: 20px;">
+            <h2 class="section-title">Get In Touch</h2>
+            <p style="text-align: center; margin-bottom: 20px; color: var(--text-muted);">
+                Ready to build intelligent systems? Let's connect.
+            </p>
+            <div style="text-align: center;">
+                <a href="mailto:ibrahimkhaled911@gmail.com" class="btn">Send Email</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 Ibrahim Khaled Shehata. All rights reserved.</p>
+            [cite_start]<p style="font-size: 0.8rem; margin-top: 10px;">Cairo, Egypt [cite: 3]</p>
+        </footer>
+    </div>
+
+</body>
+</html>
